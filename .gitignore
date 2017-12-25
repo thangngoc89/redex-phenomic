@@ -3,3 +3,4 @@ content/**.json
 lib/**
 .bsb.lock
 .merlin
+dist
