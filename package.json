@@ -7,6 +7,7 @@
     "@phenomic/preset-react-app": "^1.0.0-alpha.18",
     "bs-platform": "^2.1.0",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "hard-source-webpack-plugin": "^0.5.14",
     "npm-run-all": "^4.0.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

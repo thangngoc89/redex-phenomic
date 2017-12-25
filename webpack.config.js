@@ -3,6 +3,7 @@ import path from "path";
 import webpack from "webpack";
 import ExtractTextPlugin from "extract-text-webpack-plugin";
 import FriendlyErrorsWebpackPlugin from "friendly-errors-webpack-plugin";
+import HardSourceWebpackPlugin from "hard-source-webpack-plugin";
 
 module.exports = config => ({
   entry: {
@@ -46,6 +47,24 @@ module.exports = config => ({
     ],
   },
   plugins: [
+    new HardSourceWebpackPlugin({
+      configHash: function(webpackConfig) {
+        return require("node-object-hash")({ sort: false }).hash({
+          phenomic: config,
+          webpack: webpackConfig,
+        });
+      },
+      environmentHash: {
+        root: process.cwd(),
+        directories: [],
+        files: [
+          "webpack.config.js",
+          "phenomic.config.js",
+          "package.json",
+          "yarn.lock",
+        ],
+      },
+    }),
     new FriendlyErrorsWebpackPlugin(),
     process.env.PHENOMIC_ENV !== "static" &&
       new webpack.HotModuleReplacementPlugin(),
