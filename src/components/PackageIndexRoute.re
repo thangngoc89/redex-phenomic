@@ -2,24 +2,7 @@ open Helpers;
 
 let component = ReasonReact.statelessComponent("Home");
 
-/* TODO: Where the heck is this type def ? */
-type package = {
-  .
-  "_type": string,
-  "description": string,
-  "id": string,
-  "keywords": array(string),
-  "license": Js.nullable(string),
-  "maintenance": float,
-  "name": string,
-  "popularity": float,
-  "quality": float,
-  "slug": string,
-  "score": float,
-  "stars": Js.nullable(string),
-  "updated": Js.Date.t,
-  "version": string
-};
+type package = Typings.package;
 
 let make = (~packages: PhenomicPresetReactApp.edge(array(package))) => {
   ...component,
