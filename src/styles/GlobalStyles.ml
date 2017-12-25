@@ -47,8 +47,9 @@ let _global = begin
     overflowY Scroll;
   ];
 
-  global "html, body, #___gatsby" [
+  global "html, body, #PhenomicRoot" [
     backgroundColor Theme.Color.background;
     minHeight (pct 100.);
+    margin (px 0);
   ];
 end

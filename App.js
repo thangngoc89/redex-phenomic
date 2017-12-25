@@ -5,6 +5,11 @@ import * as HomeRoute from "./lib/es6/src/components/HomeRoute";
 import * as PackageDetailsRoute from "./lib/es6/src/components/PackageDetailsRoute";
 import * as PackageIndexRoute from "./lib/es6/src/components/PackageIndexRoute";
 import * as PublishRoute from "./lib/es6/src/components/PublishRoute";
+import { css, rehydrate } from "glamor";
+
+if (typeof window !== "undefined" && window._glam) {
+  rehydrate(window._glam);
+}
 
 const {
   createContainer,
