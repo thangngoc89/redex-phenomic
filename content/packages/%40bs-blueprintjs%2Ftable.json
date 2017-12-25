@@ -1,0 +1,23 @@
+{
+  "type": "published",
+  "id": "@bs-blueprintjs/table",
+  "name": "@bs-blueprintjs/table",
+  "version": "0.3.1",
+  "description": "BuckleScript bindings for Blueprintjs Table",
+  "author": "Shane Wilson",
+  "license": "MIT",
+  "keywords": [],
+  "body": "",
+  "analyzed": "2017-12-23T00:31:34.754Z",
+  "updated": "2017-12-23T00:31:34.754Z",
+  "stars": 10,
+  "score": 0.38517095236461696,
+  "quality": 0.271176187657386,
+  "popularity": 0.03521006345932699,
+  "maintenance": 0.8328416395903908,
+  "homepageUrl": "https://github.com/shanewilson/bs-blueprintjs#readme",
+  "repositoryUrl": "https://github.com/shanewilson/bs-blueprintjs",
+  "npmUrl": "https://www.npmjs.com/package/%40bs-blueprintjs%2Ftable",
+  "issuesUrl": "https://github.com/shanewilson/bs-blueprintjs/issues",
+  "docsUrl": null
+}

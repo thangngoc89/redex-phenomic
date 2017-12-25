@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "name": "redex-phenomic",
+  "devDependencies": {
+    "@phenomic/cli": "^1.0.0-alpha.18",
+    "@phenomic/core": "^1.0.0-alpha.18",
+    "@phenomic/preset-react-app": "^1.0.0-alpha.18",
+    "bs-platform": "^2.1.0",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "npm-run-all": "^4.0.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^3.2.0",
+    "reason-react": "^0.2.4"
+  },
+  "scripts": {
+    "reason:cleanup": "bsb -clean-world",
+    "reason:compile": "bsb -make-world",
+    "prepare": "npm run reason:compile",
+    "start": "npm run reason:cleanup && npm-run-all --parallel start:*",
+    "start:js": "phenomic start",
+    "start:reason": "npm run reason:compile -- -w",
+    "build": "npm run reason:compile && phenomic build"
+  },
+  "version": "1.0.0-alpha.18",
+  "dependencies": {
+    "algoliasearch": "^3.24.8",
+    "algoliasearch-helper": "^2.23.2",
+    "bs-css": "^5.2.0",
+    "glamor-reset": "^3.0.0-3",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^2.2.7",
+    "react-scroll-viewport": "^0.3.0",
+    "react-timeago": "^3.4.3",
+    "reason-rebase": "^0.1.2",
+    "remark-highlight.js": "^5.0.0"
+  }
+}

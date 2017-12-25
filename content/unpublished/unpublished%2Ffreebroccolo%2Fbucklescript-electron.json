@@ -1,0 +1,23 @@
+{
+  "type": "unpublished",
+  "id": "unpublished/freebroccolo/bucklescript-electron",
+  "name": "freebroccolo/bucklescript-electron",
+  "version": "0.0.0",
+  "description": "Electron API for Bucklescript",
+  "license": "ISC",
+  "keywords": ["electron", "ocaml", "bucklescript"],
+  "readme":
+    "# bucklescript-electron\n\nElectron API for Bucklescript\n\n## Installing\n\n### Prerequisites\n\n* Standard C toolchain\n* `npm`\n\n```\nnpm install\n```\n\n## Running the example\n\n```\nnpm run start    # npm run start:opt (minifies with google closure advanced mode)\n```\n",
+  "analyzed": "2017-12-24T16:47:08.126Z",
+  "updated": "2017-12-24T16:47:08.126Z",
+  "stars": 16,
+  "score": 0,
+  "quality": 0,
+  "popularity": 0,
+  "maintenance": 0,
+  "homepageUrl": "https://github.com/freebroccolo/bucklescript-electron#readme",
+  "repositoryUrl": "https://github.com/freebroccolo/bucklescript-electron",
+  "npmUrl": null,
+  "issuesUrl": "https://github.com/freebroccolo/bucklescript-electron/issues",
+  "docsUrl": null
+}

@@ -1,0 +1,25 @@
+{
+  "name": "redex-phenomic",
+  "namespace": true,
+  "refmt": 3,
+  "reason": {
+    "react-jsx": 2
+  },
+  "package-specs": {
+    "module": "es6"
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "bs-dependencies": [
+    "reason-react",
+    "@phenomic/preset-react-app",
+    "@phenomic/plugin-renderer-react",
+    "@phenomic/api-client",
+    "bs-css",
+    "reason-rebase"
+  ]
+}

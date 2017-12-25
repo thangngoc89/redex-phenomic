@@ -1,0 +1,32 @@
+{
+  "type": "published",
+  "id": "bs-batteries",
+  "name": "bs-batteries",
+  "version": "0.0.14",
+  "description": "Ocaml batteries for bucklescript",
+  "author": "meafmira",
+  "license": "MIT",
+  "keywords": [
+    "batteries-included",
+    "ocaml",
+    "bsb",
+    "bs-platform",
+    "bucklescript",
+    "bs-batteries",
+    "reason"
+  ],
+  "body":
+    "The following directories contain:\n\n* benchsuite/ provide performance evaluations of Batteries functions\n* build/      various (old) files needed for building\n* examples/   example files showing how to use various features of batteries\n* qtest/      the inline tests\n* src/        the core of Batteries Included, all the batFoo modules\n* testsuite/  a minimal testsuite for batteries",
+  "analyzed": "2017-12-22T11:34:34.769Z",
+  "updated": "2017-12-22T11:34:34.769Z",
+  "stars": 6,
+  "score": 0.5765491535472282,
+  "quality": 0.6422086030345037,
+  "popularity": 0.10279774528045962,
+  "maintenance": 0.9940210336820468,
+  "homepageUrl": "https://github.com/meafmira/bs-batteries#readme",
+  "repositoryUrl": "https://github.com/meafmira/bs-batteries",
+  "npmUrl": "https://www.npmjs.com/package/bs-batteries",
+  "issuesUrl": "https://github.com/meafmira/bs-batteries/issues",
+  "docsUrl": null
+}

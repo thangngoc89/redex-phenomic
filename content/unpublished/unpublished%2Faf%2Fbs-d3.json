@@ -1,0 +1,23 @@
+{
+  "type": "unpublished",
+  "id": "unpublished/af/bs-d3",
+  "name": "af/bs-d3",
+  "version": "0.1.0",
+  "description": "Experimental d3 4.x bindings for BuckleScript",
+  "license": "MIT",
+  "keywords": ["reasonml", "dataviz", "d3js", "d3", "bucklescript", "reason"],
+  "readme":
+    "# bs-d3\n\nWIP [d3](https://github.com/d3/d3) 4.x bindings for [Bucklescript](https://github.com/bucklescript/bucklescript/).\n\nExtremely incomplete and experimental; contributions welcome!\n\n\n## Build\n```\nnpm run build\n```\n\n## Build + Watch\n\n```\nnpm run start\n```\n\n## Current status\n\nd3 has a large [API surface](https://github.com/d3/d3/blob/master/API.md#paths-d3-path), so there's still a lot to do! However, the pieces are already in place to [draw line and area charts](https://github.com/af/bs-d3/blob/master/examples/lineChart.re)\n\nCurrently some of the typings are still quite loose/permissive, if you have any suggestions to tighten them up in an idiomatic OCaml way, please file an issue or PR.\n\n- [x] Axes\n- [x] Arrays (about 50%)\n- [ ] Brushes\n- [ ] Chords\n- [ ] Brushes\n- [ ] Collections\n- [ ] Colors\n- [ ] Dispatches\n- [ ] Dragging\n- [ ] Easings\n- [ ] Forces\n- [ ] Number formatting\n- [ ] Geo\n- [ ] Hierarchies\n- [ ] Interpolators\n- [ ] Paths\n- [ ] Polygons\n- [ ] Quadtrees\n- [x] Scales (partially)\n- [x] Selections (mostly)\n- [x] Shapes (lines & areas only at the moment)\n- [ ] Time Intervals\n- [ ] Timers\n- [ ] Transitions\n- [ ] Voronoi\n- [ ] Zooming\n\n## Known Issues\n\nWhen building this project for the first time, you'll get some \"value x can't be found\" errors in\nthe example files. Just re-build a couple of times and they'll be resolved automatically. If anyone\nknows why this happens, please file an issue or PR!\n",
+  "analyzed": "2017-12-24T16:47:07.993Z",
+  "updated": "2017-12-24T16:47:07.993Z",
+  "stars": 5,
+  "score": 0,
+  "quality": 0,
+  "popularity": 0,
+  "maintenance": 0,
+  "homepageUrl": "https://github.com/af/bs-d3",
+  "repositoryUrl": "https://github.com/af/bs-d3",
+  "npmUrl": null,
+  "issuesUrl": "https://github.com/af/bs-d3/issues",
+  "docsUrl": null
+}

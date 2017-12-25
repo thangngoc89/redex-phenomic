@@ -1,0 +1,24 @@
+{
+  "type": "published",
+  "id": "bs-atom",
+  "name": "bs-atom",
+  "version": "0.1.0",
+  "description": "Atom bindings for BuckleScript",
+  "author": "glennsl",
+  "license": "MIT",
+  "keywords": ["vscode", "extension", "bindings", "bucklescript"],
+  "body":
+    "# bs-atom\n\nIncomplete Atom bindings for BuckleScript\n\n## Usage\n\nSee the [reasonable-atom-starter](https://github.com/glennsl/reasonable-atom-starter) project as an example.",
+  "analyzed": "2017-12-23T15:27:09.317Z",
+  "updated": "2017-12-23T15:27:09.317Z",
+  "stars": 1,
+  "score": 0.45929333592137056,
+  "quality": 0.353515229247414,
+  "popularity": 0.022548849903544145,
+  "maintenance": 0.9867047705168741,
+  "homepageUrl": "https://github.com/glennsl/bs-atom#readme",
+  "repositoryUrl": "https://github.com/glennsl/bs-atom",
+  "npmUrl": "https://www.npmjs.com/package/bs-atom",
+  "issuesUrl": "https://github.com/glennsl/bs-atom/issues",
+  "docsUrl": null
+}

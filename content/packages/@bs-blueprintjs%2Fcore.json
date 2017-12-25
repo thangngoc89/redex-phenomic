@@ -1,0 +1,23 @@
+{
+  "type": "published",
+  "id": "@bs-blueprintjs/core",
+  "name": "@bs-blueprintjs/core",
+  "version": "0.3.1",
+  "description": "BuckleScript bindings for Blueprintjs",
+  "author": "Shane Wilson",
+  "license": "MIT",
+  "keywords": [],
+  "body": "",
+  "analyzed": "2017-12-23T00:31:34.682Z",
+  "updated": "2017-12-23T00:31:34.682Z",
+  "stars": 10,
+  "score": 0.39754978953805636,
+  "quality": 0.271176187657386,
+  "popularity": 0.07039258421264127,
+  "maintenance": 0.8330272250469033,
+  "homepageUrl": "https://github.com/shanewilson/bs-blueprintjs#readme",
+  "repositoryUrl": "https://github.com/shanewilson/bs-blueprintjs",
+  "npmUrl": "https://www.npmjs.com/package/%40bs-blueprintjs%2Fcore",
+  "issuesUrl": "https://github.com/shanewilson/bs-blueprintjs/issues",
+  "docsUrl": null
+}

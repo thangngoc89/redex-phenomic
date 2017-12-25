@@ -1,0 +1,4 @@
+node_modules
+content/**.json
+lib/**
+.bsb.lock
