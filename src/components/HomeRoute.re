@@ -18,7 +18,12 @@ let renderIdle = (packages: array(package)) =>
     </div>
   </div>;
 
-let make = (~packages: PhenomicPresetReactApp.edge(array(package))) => {
+let make =
+    (
+      ~popularPackages: PhenomicPresetReactApp.edge(array(package)),
+      ~recentPackages: PhenomicPresetReactApp.edge(array(package)),
+      _children
+    ) => {
   ...component,
   render: _self =>
     <HomeLayout>
@@ -35,7 +40,22 @@ let make = (~packages: PhenomicPresetReactApp.edge(array(package))) => {
                  )
             </Control.Map>
           </div> */
-        <DataLoading data=packages renderIdle />
+        <div className=Styles.lists>
+          <div>
+            <h2> ("Recent releases" |> text) </h2>
+            <DataLoading
+              data=recentPackages
+              renderIdle=(packages => <TopList packages value=`updated />)
+            />
+          </div>
+          <div>
+            <h2> ("Most popular" |> text) </h2>
+            <DataLoading
+              data=popularPackages
+              renderIdle=(packages => <TopList packages value=`stars />)
+            />
+          </div>
+        </div>
       </div>
     </HomeLayout>
 };
@@ -43,15 +63,22 @@ let make = (~packages: PhenomicPresetReactApp.edge(array(package))) => {
 let jsComponent =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
-      ~packages=
-        PhenomicPresetReactApp.jsEdgeToReason(jsProps##packages, packages =>
+      ~popularPackages=
+        PhenomicPresetReactApp.jsEdgeToReason(
+          jsProps##popularPackages, packages =>
           packages##list
-        )
+        ),
+      ~recentPackages=
+        PhenomicPresetReactApp.jsEdgeToReason(
+          jsProps##recentPackages, packages =>
+          packages##list
+        ),
+      [||]
     )
   );
 
 let queries = (_) => {
-  let packages =
+  let popularPackages =
     PhenomicPresetReactApp.query(
       List({
         path: "packages",
@@ -67,9 +94,9 @@ let queries = (_) => {
         path: "packages",
         by: Some("type"),
         value: Some("published"),
-        order: Some("asc"),
+        order: Some("desc"),
         limit: Some(10)
       })
     );
-  {"packages": packages};
+  {"popularPackages": popularPackages, "recentPackages": recentPackages};
 };
