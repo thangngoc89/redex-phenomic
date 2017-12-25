@@ -12,7 +12,8 @@ let make = (~packages, ~value, _children) => {
            package =>
              <div key=package##name className=Styles.root>
                <div>
-                 <Link href=package##slug className=Styles.name>
+                 <Link
+                   href=("/packages/" ++ package##id) className=Styles.name>
                    (package##name |> text)
                  </Link>
                  <span className=Styles.version>
