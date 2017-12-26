@@ -79,10 +79,10 @@ let renderIdle = package =>
     />
   </div>;
 
-let make = (~package, _) => {
+let make = (~push, ~package, _) => {
   ...component,
   render: _self =>
-    <IndexLayout> <DataLoading data=package renderIdle /> </IndexLayout>
+    <IndexLayout push> <DataLoading data=package renderIdle /> </IndexLayout>
 };
 
 /* TODO: fix upstream package to allow not passing a converter */
@@ -93,6 +93,7 @@ let jsComponent =
     make(
       ~package=
         PhenomicPresetReactApp.jsEdgeToReason(jsProps##package, doNothing),
+      ~push=jsProps##router##push,
       [||]
     )
   );

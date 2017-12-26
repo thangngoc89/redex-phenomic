@@ -4,7 +4,7 @@ module Styles = IndexLayoutStyles;
 
 let component = ReasonReact.statelessComponent("PageLayout");
 
-let make = children => {
+let make = (~push, children) => {
   ...component,
   render: _self =>
     <div className=Styles.root>
@@ -17,7 +17,7 @@ let make = children => {
       </Helmet>
       <div className=Styles.header>
         <div className=CommonStyles.widthContainer>
-          <SearchBox />
+          <SearchBox push />
           <Link href="/" className=Styles.title>
             <svg className=Styles.logo>
               /* NOTE: xlink stuff needed for safari */

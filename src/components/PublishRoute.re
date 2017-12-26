@@ -85,10 +85,10 @@ let style =
 
 let component = ReasonReact.statelessComponent("Publish");
 
-let make = _children => {
+let make = (~push, _children) => {
   ...component,
   render: _self =>
-    <IndexLayout>
+    <IndexLayout push>
       <div>
         <Helmet title=(Config.titleTemplate("Publishing Guide")) />
         <div className=style dangerouslySetInnerHTML={"__html": html} />
@@ -97,4 +97,6 @@ let make = _children => {
 };
 
 let jsComponent =
-  ReasonReact.wrapReasonForJs(~component, _jsProps => make([||]));
+  ReasonReact.wrapReasonForJs(~component, jsProps =>
+    make(~push=jsProps##router##push, [||])
+  );

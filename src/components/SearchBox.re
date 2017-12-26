@@ -32,7 +32,7 @@ let decodeResult = json =>
 
 let component = ReasonReact.reducerComponent("PackageSearchBox");
 
-let make = _children => {
+let make = (~push, _children) => {
   ...component,
   initialState: () => {
     searchClient:
@@ -68,7 +68,7 @@ let make = _children => {
     | SelectItem(package) =>
       ReasonReact.UpdateWithSideEffects(
         {...state, query: "", results: [||], focused: None},
-        (_self => Router.push(package##slug))
+        (_self => push(package##slug))
       )
     | KeyDown(key) =>
       if (key === Key.down) {

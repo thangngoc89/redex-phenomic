@@ -13,13 +13,14 @@ let make =
       ~popularPackages: PhenomicPresetReactApp.edge(array(package)),
       ~recentPackages: PhenomicPresetReactApp.edge(array(package)),
       ~keywords: PhenomicPresetReactApp.edge(array(keyword)),
+      ~push,
       _children
     ) => {
   ...component,
   render: _self =>
     <HomeLayout>
       <div className=Styles.root>
-        <SearchBox />
+        <SearchBox push />
         <DataLoading
           data=keywords
           renderIdle=(
@@ -80,6 +81,7 @@ let jsComponent =
         ),
       ~keywords=
         PhenomicPresetReactApp.jsEdgeToReason(jsProps##keywords, a => a##data),
+      ~push=jsProps##router##push,
       [||]
     )
   );

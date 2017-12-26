@@ -35,23 +35,22 @@ let renderIdle = (keywords: array(keyword)) =>
        )
   </Control.Map>;
 
-let make = (~keywords: PhenomicPresetReactApp.edge(array(keyword))) => {
+let make = (~push, ~keywords: PhenomicPresetReactApp.edge(array(keyword))) => {
   ...component,
-  render: _self => {
-    Js.log(keywords);
-    <IndexLayout>
+  render: _self =>
+    <IndexLayout push>
       <Helmet title=(Config.titleTemplate("Keywords")) />
       <h1> ("Keywords" |> text) </h1>
       <DataLoading data=keywords renderIdle />
-    </IndexLayout>;
-  }
+    </IndexLayout>
 };
 
 let jsComponent =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
       ~keywords=
-        PhenomicPresetReactApp.jsEdgeToReason(jsProps##keywords, a => a##data)
+        PhenomicPresetReactApp.jsEdgeToReason(jsProps##keywords, a => a##data),
+      ~push=jsProps##router##push
     )
   );
 

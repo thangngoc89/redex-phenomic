@@ -9,10 +9,10 @@ let renderIdle = packages =>
     ...(package => <PackageSummary key=package##id package />)
   </Control.Map>;
 
-let make = (~packages: PhenomicPresetReactApp.edge(array(package))) => {
+let make = (~push, ~packages: PhenomicPresetReactApp.edge(array(package))) => {
   ...component,
   render: _self =>
-    <IndexLayout>
+    <IndexLayout push>
       <Fragment>
         <Helmet title=(Config.titleTemplate("Packages")) />
         <h1> ("Packages" |> text) </h1>
@@ -27,7 +27,8 @@ let jsComponent =
       ~packages=
         PhenomicPresetReactApp.jsEdgeToReason(jsProps##packages, packages =>
           packages##list
-        )
+        ),
+      ~push=jsProps##router##push
     )
   );
 
