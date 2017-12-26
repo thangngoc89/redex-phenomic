@@ -29,7 +29,7 @@ let jsComponent =
           a##list
         ),
       ~push=jsProps##router##push,
-      ~keyword=jsProps##params##keyword
+      ~keyword=jsProps##params##keywords
     )
   );
 
