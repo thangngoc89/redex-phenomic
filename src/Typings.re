@@ -21,3 +21,9 @@ type package = {
   "issuesUrl": Js.nullable(string),
   "docsUrl": Js.nullable(string)
 };
+
+type keywords = {
+  .
+  "name": string,
+  "count": int
+};

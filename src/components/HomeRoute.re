@@ -6,22 +6,13 @@ let component = ReasonReact.statelessComponent("Home");
 
 type package = Typings.package;
 
-let renderIdle = (packages: array(package)) =>
-  <div className=Styles.lists>
-    <div>
-      <h2> ("Recent releases" |> text) </h2>
-      <TopList packages value=`updated />
-    </div>
-    <div>
-      <h2> ("Most popular" |> text) </h2>
-      <TopList packages value=`stars />
-    </div>
-  </div>;
+type keyword = Typings.keywords;
 
 let make =
     (
       ~popularPackages: PhenomicPresetReactApp.edge(array(package)),
       ~recentPackages: PhenomicPresetReactApp.edge(array(package)),
+      ~keywords: PhenomicPresetReactApp.edge(array(keyword)),
       _children
     ) => {
   ...component,
@@ -29,17 +20,29 @@ let make =
     <HomeLayout>
       <div className=Styles.root>
         <SearchBox />
-        /*<div className=Styles.keywords>
-            <Control.Map items=(keywords)>
-              ...(
-                   keyword =>
-                     <Link key=keyword##slug href=keyword##slug>
-                       <span className="label"> (keyword##name |> text) </span>
-                       <span className="count"> (keyword##count |> text) </span>
-                     </Link>
-                 )
-            </Control.Map>
-          </div> */
+        <DataLoading
+          data=keywords
+          renderIdle=(
+            keywords =>
+              <div className=Styles.keywords>
+                <Control.Map items=keywords>
+                  ...(
+                       keyword =>
+                         <Link
+                           key=keyword##name
+                           href=("/keywords/" ++ keyword##name)>
+                           <span className="label">
+                             (keyword##name |> text)
+                           </span>
+                           <span className="count">
+                             (keyword##count |> string_of_int |> text)
+                           </span>
+                         </Link>
+                     )
+                </Control.Map>
+              </div>
+          )
+        />
         <div className=Styles.lists>
           <div>
             <h2> ("Recent releases" |> text) </h2>
@@ -60,6 +63,8 @@ let make =
     </HomeLayout>
 };
 
+let doNothing = a => a;
+
 let jsComponent =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
@@ -73,6 +78,8 @@ let jsComponent =
           jsProps##recentPackages, packages =>
           packages##list
         ),
+      ~keywords=
+        PhenomicPresetReactApp.jsEdgeToReason(jsProps##keywords, a => a##data),
       [||]
     )
   );
@@ -98,5 +105,13 @@ let queries = (_) => {
         limit: Some(10)
       })
     );
-  {"popularPackages": popularPackages, "recentPackages": recentPackages};
+  let keywords =
+    PhenomicPresetReactApp.query(
+      Item({path: "", id: "keywords-sort-count-desc"})
+    );
+  {
+    "popularPackages": popularPackages,
+    "recentPackages": recentPackages,
+    "keywords": keywords
+  };
 };

@@ -7,7 +7,8 @@ module Map = {
         render: 'a => ReasonReact.reactElement
       ) => {
     ...component,
-    render: _self =>
+    render: _self => {
+      Js.log(items);
       <Fragment>
         (
           switch items {
@@ -15,7 +16,8 @@ module Map = {
           | _ => items |> Array.map(render) |> ReasonReact.arrayToElement
           }
         )
-      </Fragment>
+      </Fragment>;
+    }
   };
 };
 
