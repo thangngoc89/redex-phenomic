@@ -35,7 +35,7 @@ const routes = () => (
       )}
     />
     <Route
-      path="/packages/:package"
+      path="/packages/*"
       component={createContainer(
         PackageDetailsRoute.jsComponent,
         PackageDetailsRoute.queries
