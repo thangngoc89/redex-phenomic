@@ -50,6 +50,6 @@ let _global = begin
   global "html, body, #PhenomicRoot" [
     backgroundColor Theme.Color.background;
     minHeight (pct 100.);
-    margin (px 0);
+    margin zero;
   ];
 end
