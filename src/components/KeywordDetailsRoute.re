@@ -32,7 +32,6 @@ let jsComponent =
   );
 
 let queries = props => {
-  Js.log(props);
   let packages =
     PhenomicPresetReactApp.query(
       List({
