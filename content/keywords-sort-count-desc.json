@@ -118,604 +118,417 @@
     {
       "name": "node",
       "count": 3,
-      "packages": [
-        "bs-promise-router",
-        "bs-knex",
-        "bs-chalk"
-      ]
+      "packages": ["bs-promise-router", "bs-knex", "bs-chalk"]
     },
     {
       "name": "json",
       "count": 3,
-      "packages": [
-        "json-r",
-        "bs-ocaml-protoc-json",
-        "bs-json"
-      ]
+      "packages": ["json-r", "bs-ocaml-protoc-json", "bs-json"]
     },
     {
       "name": "bs-platform",
       "count": 3,
-      "packages": [
-        "bs-react-pdf",
-        "bs-batteries",
-        "bs-axios"
-      ]
+      "packages": ["bs-react-pdf", "bs-batteries", "bs-axios"]
     },
     {
       "name": "bsb",
       "count": 3,
-      "packages": [
-        "bs-react-pdf",
-        "bs-batteries",
-        "bs-axios"
-      ]
+      "packages": ["bs-react-pdf", "bs-batteries", "bs-axios"]
     },
     {
       "name": "test",
       "count": 2,
-      "packages": [
-        "re-respect",
-        "bs-jest"
-      ]
+      "packages": ["re-respect", "bs-jest"]
     },
     {
       "name": "vscode",
       "count": 2,
-      "packages": [
-        "bs-vscode",
-        "bs-atom"
-      ]
+      "packages": ["bs-vscode", "bs-atom"]
     },
     {
       "name": "glamor",
       "count": 2,
-      "packages": [
-        "bs-glamor",
-        "bs-css"
-      ]
+      "packages": ["bs-glamor", "bs-css"]
     },
     {
       "name": "bindings",
       "count": 2,
-      "packages": [
-        "bs-vscode",
-        "bs-atom"
-      ]
+      "packages": ["bs-vscode", "bs-atom"]
     },
     {
       "name": "extension",
       "count": 2,
-      "packages": [
-        "bs-vscode",
-        "bs-atom"
-      ]
+      "packages": ["bs-vscode", "bs-atom"]
     },
     {
       "name": "tea",
       "count": 2,
-      "packages": [
-        "bucklescript-tea",
-        "bucklescript-phx"
-      ]
+      "packages": ["bucklescript-tea", "bucklescript-phx"]
     },
     {
       "name": "reason-react",
       "count": 2,
-      "packages": [
-        "re-formality",
-        "re-classnames"
-      ]
+      "packages": ["re-formality", "re-classnames"]
     },
     {
       "name": "material-ui",
       "count": 2,
-      "packages": [
-        "bs-material-ui",
-        "bs-material-ui-icons"
-      ]
+      "packages": ["bs-material-ui", "bs-material-ui-icons"]
     },
     {
       "name": "react-component",
       "count": 2,
-      "packages": [
-        "bs-material-ui",
-        "bs-material-ui-icons"
-      ]
+      "packages": ["bs-material-ui", "bs-material-ui-icons"]
     },
     {
       "name": "css",
       "count": 2,
-      "packages": [
-        "bs-glamor",
-        "bs-css"
-      ]
+      "packages": ["bs-glamor", "bs-css"]
     },
     {
       "name": "apollo",
       "count": 2,
-      "packages": [
-        "reason-apollo",
-        "bs-promise-router"
-      ]
+      "packages": ["reason-apollo", "bs-promise-router"]
     },
     {
       "name": "testing",
       "count": 2,
-      "packages": [
-        "re-respect",
-        "bs-enzyme"
-      ]
+      "packages": ["re-respect", "bs-enzyme"]
     },
     {
       "name": "graphql",
       "count": 2,
-      "packages": [
-        "reason-apollo",
-        "bs-promise-router"
-      ]
+      "packages": ["reason-apollo", "bs-promise-router"]
     },
     {
       "name": "distributed-systems",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "lodash",
       "count": 1,
-      "packages": [
-        "rationale"
-      ]
+      "packages": ["rationale"]
     },
     {
       "name": "nact",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "redux",
       "count": 1,
-      "packages": [
-        "reductive"
-      ]
+      "packages": ["reductive"]
     },
     {
       "name": "map",
       "count": 1,
-      "packages": [
-        "bs-dom"
-      ]
+      "packages": ["bs-dom"]
     },
     {
       "name": "bs-batteries",
       "count": 1,
-      "packages": [
-        "bs-batteries"
-      ]
+      "packages": ["bs-batteries"]
     },
     {
       "name": "dataloader",
       "count": 1,
-      "packages": [
-        "bs-dataloader"
-      ]
+      "packages": ["bs-dataloader"]
     },
     {
       "name": "bs-axios",
       "count": 1,
-      "packages": [
-        "bs-axios"
-      ]
+      "packages": ["bs-axios"]
     },
     {
       "name": "serialization",
       "count": 1,
-      "packages": [
-        "bs-ocaml-protoc-json"
-      ]
+      "packages": ["bs-ocaml-protoc-json"]
     },
     {
       "name": "reactive",
       "count": 1,
-      "packages": [
-        "bs-most"
-      ]
+      "packages": ["bs-most"]
     },
     {
       "name": "svg",
       "count": 1,
-      "packages": [
-        "bs-svg-attachment"
-      ]
+      "packages": ["bs-svg-attachment"]
     },
     {
       "name": "scalar",
       "count": 1,
-      "packages": [
-        "bs-promise-router"
-      ]
+      "packages": ["bs-promise-router"]
     },
     {
       "name": "react-native",
       "count": 1,
-      "packages": [
-        "bs-react-native"
-      ]
+      "packages": ["bs-react-native"]
     },
     {
       "name": "date-fns",
       "count": 1,
-      "packages": [
-        "bs-date-fns"
-      ]
+      "packages": ["bs-date-fns"]
     },
     {
       "name": "tdd",
       "count": 1,
-      "packages": [
-        "re-respect"
-      ]
+      "packages": ["re-respect"]
     },
     {
       "name": "react-pdf",
       "count": 1,
-      "packages": [
-        "bs-react-pdf"
-      ]
+      "packages": ["bs-react-pdf"]
     },
     {
       "name": "ramda",
       "count": 1,
-      "packages": [
-        "rationale"
-      ]
+      "packages": ["rationale"]
     },
     {
       "name": "axios",
       "count": 1,
-      "packages": [
-        "bs-axios"
-      ]
+      "packages": ["bs-axios"]
     },
     {
       "name": "akka.net",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "sql",
       "count": 1,
-      "packages": [
-        "bs-knex"
-      ]
+      "packages": ["bs-knex"]
     },
     {
       "name": "material",
       "count": 1,
-      "packages": [
-        "bs-material-ui-icons"
-      ]
+      "packages": ["bs-material-ui-icons"]
     },
     {
       "name": "material design",
       "count": 1,
-      "packages": [
-        "bs-material-ui"
-      ]
+      "packages": ["bs-material-ui"]
     },
     {
       "name": "xhr",
       "count": 1,
-      "packages": [
-        "bs-fetch"
-      ]
+      "packages": ["bs-fetch"]
     },
     {
       "name": "tween",
       "count": 1,
-      "packages": [
-        "tween.re"
-      ]
+      "packages": ["tween.re"]
     },
     {
       "name": "icons",
       "count": 1,
-      "packages": [
-        "bs-material-ui-icons"
-      ]
+      "packages": ["bs-material-ui-icons"]
     },
     {
       "name": "debug",
       "count": 1,
-      "packages": [
-        "bs-rebug"
-      ]
+      "packages": ["bs-rebug"]
     },
     {
       "name": "design",
       "count": 1,
-      "packages": [
-        "bs-material-ui-icons"
-      ]
+      "packages": ["bs-material-ui-icons"]
     },
     {
       "name": "spectacle",
       "count": 1,
-      "packages": [
-        "bs-spectacle"
-      ]
+      "packages": ["bs-spectacle"]
     },
     {
       "name": "chalk",
       "count": 1,
-      "packages": [
-        "bs-chalk"
-      ]
+      "packages": ["bs-chalk"]
     },
     {
       "name": "knex",
       "count": 1,
-      "packages": [
-        "bs-knex"
-      ]
+      "packages": ["bs-knex"]
     },
     {
       "name": "event sourcing",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "color",
       "count": 1,
-      "packages": [
-        "bs-chalk"
-      ]
+      "packages": ["bs-chalk"]
     },
     {
       "name": "fela",
       "count": 1,
-      "packages": [
-        "bs-react-fela"
-      ]
+      "packages": ["bs-react-fela"]
     },
     {
       "name": "browser",
       "count": 1,
-      "packages": [
-        "bs-fetch"
-      ]
+      "packages": ["bs-fetch"]
     },
     {
       "name": "jest",
       "count": 1,
-      "packages": [
-        "bs-jest"
-      ]
+      "packages": ["bs-jest"]
     },
     {
       "name": "actor system",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "phoenix",
       "count": 1,
-      "packages": [
-        "bucklescript-phx"
-      ]
+      "packages": ["bucklescript-phx"]
     },
     {
       "name": "fetch",
       "count": 1,
-      "packages": [
-        "bs-fetch"
-      ]
+      "packages": ["bs-fetch"]
     },
     {
       "name": "jquery",
       "count": 1,
-      "packages": [
-        "@nebuta/bs-jquery"
-      ]
+      "packages": ["@nebuta/bs-jquery"]
     },
     {
       "name": "async",
       "count": 1,
-      "packages": [
-        "bs-most"
-      ]
+      "packages": ["bs-most"]
     },
     {
       "name": "immutable",
       "count": 1,
-      "packages": [
-        "immutable-re"
-      ]
+      "packages": ["immutable-re"]
     },
     {
       "name": "nprogress",
       "count": 1,
-      "packages": [
-        "bs-nprogress"
-      ]
+      "packages": ["bs-nprogress"]
     },
     {
       "name": "syntax",
       "count": 1,
-      "packages": [
-        "bs-ocaml-protoc-json"
-      ]
+      "packages": ["bs-ocaml-protoc-json"]
     },
     {
       "name": "most",
       "count": 1,
-      "packages": [
-        "bs-most"
-      ]
+      "packages": ["bs-most"]
     },
     {
       "name": "streams",
       "count": 1,
-      "packages": [
-        "bs-most"
-      ]
+      "packages": ["bs-most"]
     },
     {
       "name": "next",
       "count": 1,
-      "packages": [
-        "bs-next"
-      ]
+      "packages": ["bs-next"]
     },
     {
       "name": "most.js",
       "count": 1,
-      "packages": [
-        "bs-most"
-      ]
+      "packages": ["bs-most"]
     },
     {
       "name": "bs-react-pdf",
       "count": 1,
-      "packages": [
-        "bs-react-pdf"
-      ]
+      "packages": ["bs-react-pdf"]
     },
     {
       "name": "reasonreact",
       "count": 1,
-      "packages": [
-        "bs-next"
-      ]
+      "packages": ["bs-next"]
     },
     {
       "name": "promise",
       "count": 1,
-      "packages": [
-        "bs-most"
-      ]
+      "packages": ["bs-most"]
     },
     {
       "name": "non-blocking",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "enzyme",
       "count": 1,
-      "packages": [
-        "bs-enzyme"
-      ]
+      "packages": ["bs-enzyme"]
     },
     {
       "name": "database",
       "count": 1,
-      "packages": [
-        "bs-knex"
-      ]
+      "packages": ["bs-knex"]
     },
     {
       "name": "functional",
       "count": 1,
-      "packages": [
-        "bs-most"
-      ]
+      "packages": ["bs-most"]
     },
     {
       "name": "react-intl",
       "count": 1,
-      "packages": [
-        "bs-react-intl"
-      ]
+      "packages": ["bs-react-intl"]
     },
     {
       "name": "akka",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "actors",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "actor-model",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "erlang",
       "count": 1,
-      "packages": [
-        "reason-nact"
-      ]
+      "packages": ["reason-nact"]
     },
     {
       "name": "classnames",
       "count": 1,
-      "packages": [
-        "re-classnames"
-      ]
+      "packages": ["re-classnames"]
     },
     {
       "name": "next.js",
       "count": 1,
-      "packages": [
-        "bs-next"
-      ]
+      "packages": ["bs-next"]
     },
     {
       "name": "clojurescript",
       "count": 1,
-      "packages": [
-        "clj-collection-apis-reasonml"
-      ]
+      "packages": ["clj-collection-apis-reasonml"]
     },
     {
       "name": "batteries-included",
       "count": 1,
-      "packages": [
-        "bs-batteries"
-      ]
+      "packages": ["bs-batteries"]
     },
     {
       "name": "monad",
       "count": 1,
-      "packages": [
-        "rationale"
-      ]
+      "packages": ["rationale"]
     },
     {
       "name": "bdd",
       "count": 1,
-      "packages": [
-        "re-respect"
-      ]
+      "packages": ["re-respect"]
     },
     {
       "name": "protobuf",
       "count": 1,
-      "packages": [
-        "bs-ocaml-protoc-json"
-      ]
+      "packages": ["bs-ocaml-protoc-json"]
     }
   ]
 }
