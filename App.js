@@ -4,6 +4,7 @@ import { createApp, renderApp } from "@phenomic/preset-react-app/lib/client";
 import * as HomeRoute from "./lib/es6/src/components/HomeRoute";
 import * as PackageDetailsRoute from "./lib/es6/src/components/PackageDetailsRoute";
 import * as PackageIndexRoute from "./lib/es6/src/components/PackageIndexRoute";
+import * as KeywordIndexRoute from "./lib/es6/src/components/KeywordIndexRoute";
 import * as PublishRoute from "./lib/es6/src/components/PublishRoute";
 import { css, rehydrate } from "glamor";
 
@@ -34,6 +35,13 @@ const routes = () => (
       component={createContainer(
         PackageDetailsRoute.jsComponent,
         PackageDetailsRoute.queries
+      )}
+    />
+    <Route
+      path="/keywords"
+      component={createContainer(
+        KeywordIndexRoute.jsComponent,
+        KeywordIndexRoute.queries
       )}
     />
     <Route path="*" component={() => <div> Not found </div>} />

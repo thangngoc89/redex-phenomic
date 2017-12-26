@@ -6,7 +6,7 @@ let component = ReasonReact.statelessComponent("Home");
 
 type package = Typings.package;
 
-type keyword = Typings.keywords;
+type keyword = Typings.keyword;
 
 let make =
     (

@@ -4,6 +4,11 @@ let component = ReasonReact.statelessComponent("Home");
 
 type package = Typings.package;
 
+let renderIdle = packages =>
+  <Control.Map items=packages>
+    ...(package => <PackageSummary key=package##id package />)
+  </Control.Map>;
+
 let make = (~packages: PhenomicPresetReactApp.edge(array(package))) => {
   ...component,
   render: _self =>
@@ -11,17 +16,7 @@ let make = (~packages: PhenomicPresetReactApp.edge(array(package))) => {
       <Fragment>
         <Helmet title=(Config.titleTemplate("Packages")) />
         <h1> ("Packages" |> text) </h1>
-        (
-          switch packages {
-          | Inactive
-          | Loading => "Loading ..." |> text
-          | Errored => "An error occured" |> text
-          | Idle(packages) =>
-            <Control.Map items=packages>
-              ...(package => <PackageSummary key=package##id package />)
-            </Control.Map>
-          }
-        )
+        <DataLoading data=packages renderIdle />
       </Fragment>
     </IndexLayout>
 };

@@ -22,8 +22,9 @@ type package = {
   "docsUrl": Js.nullable(string)
 };
 
-type keywords = {
+type keyword = {
   .
   "name": string,
-  "count": int
+  "count": int,
+  "packages": array(string)
 };
