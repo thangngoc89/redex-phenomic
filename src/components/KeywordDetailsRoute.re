@@ -27,7 +27,7 @@ let jsComponent =
       ~packages=
         PhenomicPresetReactApp.jsEdgeToReason(jsProps##packages, a => a##list),
       ~push=jsProps##router##push,
-      ~keyword=jsProps##params##keyword
+      ~keyword=jsProps##params##splat
     )
   );
 
@@ -37,7 +37,7 @@ let queries = props => {
       List({
         path: "packages",
         by: Some("keywords"),
-        value: Some(props##params##keyword),
+        value: Some(props##params##splat),
         order: Some("asc"),
         limit: None
       })
