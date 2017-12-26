@@ -25,19 +25,21 @@ let jsComponent =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
       ~packages=
-        PhenomicPresetReactApp.jsEdgeToReason(jsProps##packages, a => a##list),
+        PhenomicPresetReactApp.jsEdgeToReason(jsProps##packageKeyword, a =>
+          a##list
+        ),
       ~push=jsProps##router##push,
-      ~keyword=jsProps##params##splat
+      ~keyword=jsProps##params##keyword
     )
   );
 
 let queries = props => {
-  let packages =
+  let packageKeyword =
     PhenomicPresetReactApp.query(
       List({
         path: "packages",
         by: Some("keywords"),
-        value: Some(props##params##splat),
+        value: Some(props##params##keywords),
         order: Some("asc"),
         limit: None
       })
@@ -46,5 +48,5 @@ let queries = props => {
      limit: Some(10)
      after: Some(string)
      */
-  {"packages": packages};
+  {"packageKeyword": packageKeyword};
 };

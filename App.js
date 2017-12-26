@@ -49,7 +49,7 @@ const routes = () => (
       )}
     />
     <Route
-      path="/keywords/*"
+      path="/keywords/:keywords"
       component={createContainer(
         KeywordDetailsRoute.jsComponent,
         KeywordDetailsRoute.queries
