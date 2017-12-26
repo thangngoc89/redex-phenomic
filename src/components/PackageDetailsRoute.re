@@ -101,7 +101,7 @@ let jsComponent =
 let queries = props => {
   let package =
     PhenomicPresetReactApp.query(
-      Item({path: "packages", id: props##params##splat})
+      Item({path: "packages", id: props##params##package})
     );
   {"package": package};
 };
