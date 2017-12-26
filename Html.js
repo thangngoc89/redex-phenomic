@@ -15,6 +15,7 @@ export default ({ App, render }) => {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link href="/reset.css" rel="stylesheet" />
         {helmet.meta.toComponent()}
         {helmet.title.toComponent()}
         {helmet.base.toComponent()}

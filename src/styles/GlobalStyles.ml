@@ -1,6 +1,6 @@
 open! Css
 
-[%%raw "require('glamor-reset')"]
+(* [%%raw "require('glamor-reset')"] *)
 
 let _reset = begin
   global "*" [
