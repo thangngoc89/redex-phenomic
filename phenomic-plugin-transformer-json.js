@@ -24,8 +24,11 @@ function mdTransform(config, body) {
 }
 
 function transformJSONFile({ config, file, contents }) {
-  const data = Object.assign({}, JSON.parse(contents.toString()), {
-    path: path.basename(file.name, ".json"),
+  const parsedContents = JSON.parse(contents.toString());
+  const data = Object.assign({}, parsedContents, {
+    path: file.name.startsWith("packages/")
+      ? "packages/" + parsedContents.id
+      : path.basename(file.name, ".json"),
   });
   data.body = mdTransform(config, data.body).contents;
 
@@ -39,7 +42,7 @@ function transformJSONFile({ config, file, contents }) {
 
 module.exports = function() {
   return {
-    name: "@phenomic/plugin-transform-json",
+    name: "redex-transformer-json",
     supportedFileTypes: ["json"],
     transform: transformJSONFile,
   };

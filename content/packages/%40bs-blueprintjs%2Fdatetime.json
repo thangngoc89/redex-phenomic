@@ -1,1 +1,23 @@
-{"type":"published","id":"@bs-blueprintjs/datetime","name":"@bs-blueprintjs/datetime","version":"0.3.1","description":"BuckleScript bindings for Blueprintjs Datetime","author":"Shane Wilson","license":"MIT","keywords":[],"body":"","analyzed":"2017-12-23T00:31:23.762Z","updated":"2017-12-23T00:31:23.762Z","stars":10,"score":0.3845688486587944,"quality":0.271176187657386,"popularity":0.034101714822610166,"maintenance":0.8322296919247574,"homepageUrl":"https://github.com/shanewilson/bs-blueprintjs#readme","repositoryUrl":"https://github.com/shanewilson/bs-blueprintjs","npmUrl":"https://www.npmjs.com/package/%40bs-blueprintjs%2Fdatetime","issuesUrl":"https://github.com/shanewilson/bs-blueprintjs/issues","docsUrl":null}
+{
+  "type": "published",
+  "id": "@bs-blueprintjs/datetime",
+  "name": "@bs-blueprintjs/datetime",
+  "version": "0.3.1",
+  "description": "BuckleScript bindings for Blueprintjs Datetime",
+  "author": "Shane Wilson",
+  "license": "MIT",
+  "keywords": [],
+  "body": "",
+  "analyzed": "2017-12-23T00:31:23.762Z",
+  "updated": "2017-12-23T00:31:23.762Z",
+  "stars": 10,
+  "score": 0.3845688486587944,
+  "quality": 0.271176187657386,
+  "popularity": 0.034101714822610166,
+  "maintenance": 0.8322296919247574,
+  "homepageUrl": "https://github.com/shanewilson/bs-blueprintjs#readme",
+  "repositoryUrl": "https://github.com/shanewilson/bs-blueprintjs",
+  "npmUrl": "https://www.npmjs.com/package/%40bs-blueprintjs%2Fdatetime",
+  "issuesUrl": "https://github.com/shanewilson/bs-blueprintjs/issues",
+  "docsUrl": null
+}
