@@ -21,7 +21,9 @@
     "start": "npm run reason:cleanup && npm-run-all --parallel start:*",
     "start:js": "phenomic start",
     "start:reason": "npm run reason:compile -- -w",
-    "build": "npm run reason:compile && phenomic build"
+    "build": "npm run reason:compile && phenomic build",
+    "publish":
+      "cd dist && git init && git remote add origin git@github.com:Larask/larask.github.io.git && git add . && git commit -am 'Initial commit' && git push -fu origin master"
   },
   "version": "1.0.0-alpha.18",
   "dependencies": {
